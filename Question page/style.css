@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) !important;
+    text-align: center !important;
+}
+
+body {
+    background: url('../images/Question page background/background.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Fira Sans', sans-serif !important;
+    overflow: hidden;
+}
+
+#overly-behind {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    color: white;
+    font-size: 130%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+span {
+    color: rgb(95, 35, 207);
+}
+
+#score-con {
+    padding-top: 600px;
+}
+
+#start1, #start2 {
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* inputs */
+.edit {
+    width: 200px;
+    height: 35px;
+    font-size: 80%;
+    padding: 12px;
+}
+
+#con1, #con2, #con3, #con4, #con5, #con6, #con7, #con8, #con9, #con10, #con11, #main-hard-con, #conh1, #conh2, #conh3, #conh4, #conh5, #conh6, #conh7, #final-con {
+    display: none;
+}

@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black !important;
+    color: white !important;
+    background: url('images/main background/background.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Fira Sans', sans-serif !important;
+    overflow: hidden;
+}
+
+#overly-behind-content {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-size: 180%;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+#button-in-bottom {
+    padding: 3px 18px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#button-in-bottom:active {
+  background-color: #131111;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+#accordion {
+    margin-top: 100vh;
+}
+
+#accordion .card {
+    background-color: black;
+}
+
+span {
+    color:rgb(98, 66, 216);
+    font-weight: bold;
+}
+
+#footer-text {
+    font-size: 70% !important;
+    color: rgb(169, 28, 197);
+    text-decoration-line: line-through;
+    background-color: black;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    #footer-text {
+        padding-bottom: 170px;
+    }
+}

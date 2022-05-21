@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ali Bolouki, Questions"/>
+    <meta name="description" content="Ali Bolouki's personal website with questions"/>
+    <meta name="author" content="Ali Bolouki"/>
+    <!--Title bar-->
+    <link rel="shortcut icon" href="../images/title bar/icons8-super-mario-96.png"/>
+    <title>Ali Bolouki</title>
+    <!--CSS3-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!--Bootstrap4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Googel fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-con" class="container-fluid">
+        <div class="row">
+            <div id="overly-behind" class="col-12">
+                <p class="col-12 text-center lead">So I will ask you some personal questions about myself. I guess just two person can answer all questions.</p>
+                <p id="start1" class="btn-link lead" onclick="start();">Start</p>
+            </div>
+        </div>
+    </div>
+
+    <!--1-->
+    <div class="container-fluid" id="con1">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q1">When is my birthday?<br/> <small>Write like this in Persian (dd/mm/yyyy) and this (yyyy/mm/dd) in English</small></label>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q1" placeholder="Type it here"/>
+                    <input onclick="question1(q1);" class="col-md-2 col-12 btn btn-dark border rounded" id="q1-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--2-->
+    <div class="container-fluid" id="con2">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q2">Where do I live?<br/> <small>Write in Persian or English</small></label>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q2" placeholder="Type it here"/>
+                    <input onclick="question2(q2);" class="col-md-2 col-12 btn btn-dark border rounded" id="q2-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--3-->
+    <div class="container-fluid" id="con3">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q3">Which one is my phone? (Type the number)</label>
+                        <select class="col-md-4 d-block mx-auto mb-2">
+                            <option value="CATs70">1.CATs70</option>
+                            <option value="iPhone11">2.iPhone11</option>
+                            <option value="iPhone8 plus">3.iPhone8 plus</option>
+                            <option value="BlackBerry prive">4.BlackBerry prive</option>
+                        </select>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q3" placeholder="Type it here"/>
+                    <input onclick="question3(q3);" class="col-md-2 col-12 btn btn-dark border rounded" id="q3-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--4-->
+    <div class="container-fluid" id="con4">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q4">Which type of music do I like?</label>
+                        <select class="col-md-4 d-block mx-auto mb-2">
+                            <option value="Rap">1.Rap</option>
+                            <option value="Pop">2.Pop</option>
+                            <option value="Classic">3.Classic</option>
+                            <option value="Everything">4.Everything</option>
+                        </select>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q4" placeholder="Type it here"/>
+                    <input onclick="question4(q4);" class="col-md-2 col-12 btn btn-dark border rounded" id="q4-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--5-->
+    <div class="container-fluid" id="con5">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q5">Do I have a dog? (yes or no)</label>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q5" placeholder="Type it here"/>
+                    <input onclick="question5(q5);" class="col-md-2 col-12 btn btn-dark border rounded" id="q5-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--6-->
+    <div class="container-fluid" id="con6">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q6">Do I like motorcycle?</label>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q6" placeholder="Type it here"/>
+                    <input onclick="question6(q6);" class="col-md-2 col-12 btn btn-dark border rounded" id="q6-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--7-->
+    <div class="container-fluid" id="con7">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q7">Which one is my favorite car?</label>
+                        <select class="col-md-4 d-block mx-auto mb-2">
+                            <option value="BMW">1.BMW</option>
+                            <option value="Lamborghini">2.Lamborghini</option>
+                            <option value="Mercedes-Benz">3.Mercedes-Benz</option>
+                            <option value="پراید"> 
+                                 4.پراید
+                            </option>
+                        </select>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q7" placeholder="Type it here"/>
+                    <input onclick="question7(q7);" class="col-md-2 col-12 btn btn-dark border rounded" id="q7-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--8-->
+    <div class="container-fluid" id="con8">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q8">In my piont of view, which country is special?</label>
+                        <select class="col-md-4 d-block mx-auto mb-2">
+                            <option value="U.K">1.U.K</option>
+                            <option value="U.S.A">2.U.S.A</option>
+                            <option value="Russia">3.Russia</option>
+                            <option value="Iran">4.Iran</option>
+                        </select>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q8" placeholder="Type it here"/>
+                    <input onclick="question8(q8);" class="col-md-2 col-12 btn btn-dark border rounded" id="q8-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--9-->
+    <div class="container-fluid" id="con9">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q9">Do I like to color my hair?</label>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q9" placeholder="Type it here"/>
+                    <input onclick="question9(q9);" class="col-md-2 col-12 btn btn-dark border rounded" id="q9-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--10-->
+    <div class="container-fluid" id="con10">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q10">Do I like to have tattoo?</label>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q10" placeholder="Type it here"/>
+                    <input onclick="question10(q10);" class="col-md-2 col-12 btn btn-dark border rounded" id="q10-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--11-->
+    <div class="container-fluid" id="con11">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="q11">Which color is my favorite?</label>
+                        <select class="col-md-4 d-block mx-auto mb-2">
+                            <option value="Black">1.Black</option>
+                            <option value="White">2.White</option>
+                            <option value="Green">3.Green</option>
+                            <option value="Blue">4.Blue</option>
+                        </select>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="q11" placeholder="Type it here"/>
+                    <input onclick="question11(q11);" class="col-md-2 col-12 btn btn-dark border rounded" id="q11-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Starting of the harder questions -->
+    <div id="main-hard-con" class="container-fluid">
+        <div class="row">
+            <div id="overly-behind" class="col-12">
+                <p id="text-hard" class="col-12 text-center lead">Now It's time for more personal questions and also harder</p>
+                <p id="start2" class="btn-link lead" onclick="hardq();">Start</p>
+            </div>
+        </div>
+    </div>
+
+    <!--1h-->
+    <div class="container-fluid" id="conh1">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="qh1">What is the name of my best friend?</label>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="qh1" placeholder="Type it here"/>
+                    <input onclick="questionh1(qh1);" class="col-md-2 col-12 btn btn-dark border rounded" id="qh1-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--2h-->
+    <div class="container-fluid" id="conh2">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="qh2">Where is my پاتوق in Shiraz?</label>
+                        <select class="col-md-4 d-block mx-auto mb-2">
+                            <option>1.عفیف آباد</option>
+                            <option>2.ارم</option>
+                            <option>3.قدوسی</option>
+                            <option>4.چمران</option>
+                        </select>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="qh2" placeholder="Type it here"/>
+                    <input onclick="questionh2(qh2);" class="col-md-2 col-12 btn btn-dark border rounded" id="qh2-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--3h-->
+    <div class="container-fluid" id="conh3">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="qh3">What and where is my favorite cafe in Shiraz?</label>
+                        <select class="col-md-4 d-block mx-auto mb-2">
+                            <option>1.پاپریکا - معالی آباد</option>
+                            <option>2.بالکافه - ستارخان</option>
+                            <option>3.بالکافه - خاکشناسی</option>
+                            <option>4.تو همه جا میری بدبخت😂</option>
+                        </select>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="qh3" placeholder="Type it here"/>
+                    <input onclick="questionh3(qh3);" class="col-md-2 col-12 btn btn-dark border rounded" id="qh3-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--4h-->
+    <div class="container-fluid" id="conh4">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="qh4">Where is my favorite street in Shiraz?</label>
+                        <select class="col-md-4 d-block mx-auto mb-2">
+                            <option>1.ملاصدرا</option>
+                            <option>2.زرگری</option>
+                            <option>3.خلبانان</option>
+                            <option>4.محلاتی</option>
+                        </select>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="qh4" placeholder="Type it here"/>
+                    <input onclick="questionh4(qh4);" class="col-md-2 col-12 btn btn-dark border rounded" id="qh4-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--5h-->
+    <div class="container-fluid" id="conh5">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="qh5">How is Ali Bolouki in his mind?</label>
+                        <select class="col-md-4 d-block mx-auto mb-2">
+                            <option>1.A person that consider everything important</option>
+                            <option>2.A person who wants to just see and make everybody and himself happy</option>
+                            <option>3.A wild person😂</option>
+                            <option>4.A selfish person</option>
+                        </select>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="qh5" placeholder="Type it here"/>
+                    <input onclick="questionh5(qh5);" class="col-md-2 col-12 btn btn-dark border rounded" id="qh5-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--6h-->
+    <div class="container-fluid" id="conh6">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="qh6">Do you think I ever had a girlfriend?</label>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="qh6" placeholder="Type it here"/>
+                    <input onclick="questionh6(qh6);" class="col-md-2 col-12 btn btn-dark border rounded" id="qh6-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--7h-->
+    <div class="container-fluid" id="conh7">
+        <div clss="row">
+            <div id="overly-behind" class="col-12">
+                <form action="#" class="col-12" onsubmit="return false;">
+                    <label class="col-12 d-block" for="qh7">The last question is, who is Sweetheart?😂</label>
+                    <input class="col-md-3 col-12 border edit rounded mb-2" type="text" id="qh7" placeholder="Type it here"/>
+                    <input onclick="questionh7(qh7);" class="col-md-2 col-12 btn btn-dark border rounded" id="qh7-sub" type="submit" value="Check"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--The last world-->
+    <div id="final-con" class="container-fluid">
+        <div class="row">
+            <div id="overly-behind" class="col-12">
+                <p class="col-12 text-center lead">You did it. So thank you so much for answering the questins😊</p>
+                <a href="#" class="col-12 text-center lead" onclick="alert(girlfriend + ' Give me this code');">Click to get the code</a>
+                <a href="../root.html">Return to main page</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Showing Score-->
+    <div id="score-con" class="container-fluid">
+        <div class="row">
+            <p id="score" class="col-12 mt-3">Score: 100</p>
+        </div>
+    </div>
+
+
+    <script>
+        //Score
+        var score = 100;
+
+        // click on start text - hide main-con and block con1
+        function start() {
+            document.getElementById("main-con").style.display = "none";
+            document.getElementById("con1").style.display = "block";
+        }
+
+        // q1
+        function question1 () {
+            if (q1.value === "10/05/1384" || q1.value === "10/5/1384"|| q1.value === "2005/8/1" || q1.value === "2005/08/01") {
+                window.alert("That's right. I'm close to 16");
+                document.getElementById("con1").style.display = "none";
+                //showing question 2
+                document.getElementById("con2").style.display = "block";
+            } else {
+                window.alert("No that's not right. Make sure to use the correct form of date like 05/02/1373 or 2002/05/12");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            }
+        }
+
+        //q2
+        function question2 () {
+            if (q2.value === "Shiraz" || q2.value === "shiraz" || q2.value === "شیراز") {
+                window.alert("Well that was easy");
+                document.getElementById("con2").style.display = "none";
+                //showing question 3
+                document.getElementById("con3").style.display = "block";
+            } else {
+                window.alert("Are you sure? Make sure to check the dictation");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            }
+        }
+
+        //q3
+        function question3 () {
+            if (q3.value === "3") {
+                window.alert("Good job");
+                document.getElementById("con3").style.display = "none";
+                //showing question 4
+                document.getElementById("con4").style.display = "block";
+            } else {
+                window.alert("🙄 Try again (Type the number)");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            }
+        }
+
+        //q4 
+        function question4 () {
+            if (q4.value === "4") {
+                window.alert("Yeah dude I listen to any music that I think it's great");
+                document.getElementById("con4").style.display = "none";
+                //showing question 5
+                document.getElementById("con5").style.display = "block";
+            } else {
+                window.alert("Yoo dude!!! Think more 🤨");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            }
+        }
+
+        //q5 
+        function question5 () {
+            if (q5.value === "yes" || q5.value === "Yes") {
+                window.alert("I wish I had but I don't. Sometimes a dog can be more helpful than a person");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            } else if (q5.value === "no" || q5.value === "No") {
+                window.alert("Could you please buy me a dog!?😢");
+                document.getElementById("con5").style.display = "none";
+                //showing question 6
+                document.getElementById("con6").style.display = "block";
+            } else {
+                window.alert("Just type yes or no");
+            }
+        }
+
+        //q6
+        function question6 () {
+            if (q6.value === "yes" || q6.value === "Yes") {
+                window.alert("Of course I like motorcycle as much as car");
+                document.getElementById("con6").style.display = "none";
+                //showing question 7
+                document.getElementById("con7").style.display = "block";
+            } else if (q6.value === "no" || q6.value === "No") {
+                window.alert("Why do you think that?!");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            } else {
+                window.alert("Type yes or no");
+            }
+        }
+        
+        //q7
+        function question7 () {
+            if (q7.value === "1") {
+                window.alert("Yes I really like BMW's cars");
+                document.getElementById("con7").style.display = "none";
+                //showing question 8
+                document.getElementById("con8").style.display = "block";
+            } else {
+                window.alert("Naaah! Which one is more moderne? (Write the number)");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            }
+        }
+
+        //q8
+        function question8 () {
+            if (q8.value === "3") {
+                window.alert("You got it!");
+                document.getElementById("con8").style.display = "none";
+                //q9
+                document.getElementById("con9").style.display = "block";
+            } else {
+                window.alert("No think better");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            }
+        }
+
+        //q9
+        function question9 () {
+            if (q9.value === "yes" || q9.value === "Yes") {
+                window.alert("Yes I do and maybe I will color my hair when I cut it");
+                document.getElementById("con9").style.display = "none";
+                //q10
+                document.getElementById("con10").style.display = "block";
+            } else if (q9.value === "no" || q9.value === "No") {
+                window.alert("Nah!");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            } else {
+                window.alert("Just say yes or no");
+            }
+        }
+
+        //q10
+        function question10 () {
+            if (q10.value === "yes" || q10.value === "Yes") {
+                window.alert("yeah man like to write (Sweetheart) on my hand😂");
+                document.getElementById("con10").style.display = "none";
+                //q11
+                document.getElementById("con11").style.display = "block";
+            } else if (q10.value === "no" || q10.value === "No") {
+                window.alert("🙄Than why do you think that!");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            } else {
+                window.alert("Just say yes or no");
+            }
+        }
+
+        //q11
+        function question11 () {
+            if (q11.value === "1") {
+                window.alert("You know what? I love black");
+                document.getElementById("con11").style.display = "none";
+                //showing haed questions
+                document.getElementById("main-hard-con").style.display = "block";
+            } else {
+                window.alert("nah nah nah nah!");
+                score -= 5;
+                document.getElementById("score").innerHTML = "Score: " + score;
+            }
+        }
+
+        
+        //Section two = Hard questions (If the user has 75 or more score)
+            //qh1 
+            function questionh1() {
+                if (qh1.value === "Mahan" || qh1.value === "mahan" || qh1.value === "ماهان") {
+                    window.alert("Oh my God! Did you know that? That's right");
+                    document.getElementById("conh1").style.display = "none";
+                    //Showing question 2
+                    document.getElementById("conh2").style.display = "block";
+                } else if (qh1.value === "Saba" || qh1.value === "saba" || qh1.value === "صبا" || qh1.value === "Sweetheart" || qh1.value === "sweetheart" || qh1.value === "Saba Ghodsi" || qh1.value === "saba ghodsi") {
+                    window.alert("I really like to be your best friend but you said that we may can't be by now🙂");
+                } else {
+                    window.alert("No that's wrong (He is a boy)");
+                }
+                return 0;
+            }
+
+            //qh2
+            function questionh2() {
+                if (qh2.value === "2") {
+                    window.alert("هااااع باریکلا😂");
+                    document.getElementById("conh2").style.display = "none";
+                    //Showing question 3
+                    document.getElementById("conh3").style.display = "block";
+                } else if (qh2.value === "1") {
+                    window.alert("اره قبلا اونجا ولو بودم😂");
+                } else {
+                    window.alert("Think more (Type the number)");
+                }
+                return 0;
+            }
+
+            //qh3
+            function questionh3() {
+                if (qh3.value === "4") {
+                    window.alert("هااا والا همه جا😂");
+                    document.getElementById("conh3").style.display = "none";
+                    //Showing question 4
+                    document.getElementById("conh4").style.display = "block";
+                } else if (qh3.value === "3") {
+                    window.alert("دوست دارم همیشه اونجا باشم ولی خب نمیشه😂");
+                } else {
+                    window.alert("بزن همه جا بره پی کارشا");
+                }
+                return 0;
+            }
+
+            //qh4
+            function questionh4() {
+                if (qh4.value === "2") {
+                    window.alert("(¬‿¬)Yeah!");
+                    document.getElementById("conh4").style.display = "none";
+                    //Showing question 5
+                    document.getElementById("conh5").style.display = "block";
+                } else {
+                    window.alert("Try again!(*/ω＼*)");
+                }
+                return 0;
+            }
+
+            //qh5
+            function questionh5() {
+                if (qh5.value === "2") {
+                    window.alert("Yes when I see the person who I like is happy, I will be happy x 10😊");
+                    document.getElementById("conh5").style.display = "none";
+                    //Showing question 6
+                    document.getElementById("conh6").style.display = "block";
+                } else {
+                    window.alert("Not true");
+                }
+                return 0;
+            }
+
+            //qh6
+            girlfriend = 13546738;
+            function questionh6() {
+                if (qh6.value === "yes" || qh6.value === "Yes") {
+                    window.alert("Jesus Christ!😑 \nI don't know why everyone thinks that I should've had a girlfriend. Look I swear to GOD I didn't have any.😂\nIf you want to know why I didn't have, you can ask me in privet");
+                    girlfriend += 1;
+                } else if (qh6.value === "no" || qh6.value === "No") {
+                    window.alert("Yeah I didn't ever had one. However, everybody thinks that I'm lying😐\n They say you look suspicious😂");
+                    document.getElementById("conh6").style.display = "none";
+                    document.getElementById("conh7").style.display = "block";
+                    girlfriend -= 1;
+                } else {
+                    window.alert("Just yes or no");
+                }
+                return 0;
+            }
+
+            //qh7
+            function questionh7() {
+                if (qh7.value === "The person who I love to spend time with") {
+                    window.alert("یالااااااا تمومش کردی😂 ");
+                    document.getElementById("conh7").style.display = "none";
+                    document.getElementById("final-con").style.display = "block";
+                } else {
+                    window.alert("Noooo try again");
+                }
+                return 0;
+                hardq();
+            }
+
+            function hardq() {
+                if (score >= 75) {
+                        document.getElementById("main-hard-con").style.display = "none";
+                        document.getElementById("conh1").style.display = "block";
+                        document.getElementById("score-con").style.display = "none";
+                } else {
+                    document.getElementById("text-hard").innerHTML = "Well your score is less than 70, so you can't continue but you can try again by refreshing the page";
+                    document.getElementById("start2").style.display = "none";
+                }
+            }
+     </script>
+    
+    <!--Bootstrap4-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
